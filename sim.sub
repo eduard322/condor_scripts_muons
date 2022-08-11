@@ -1,6 +1,7 @@
+#executable = sim_flux_1.sh
 executable = sim.sh
-arguments = $(directory) $(ProcId) $(N) $(muon_file) $(n_events) $(SUB)
-environment = "EOS_DATA=$ENV(EOS_DATA) SHIP_CVMFS_SETUP_FILE=$ENV(SHIP_CVMFS_SETUP_FILE) FAIRSHIP_DIR=$ENV(FAIRSHIP) MAGNET_GEO=$ENV(MAGNET_GEO)"
+arguments = $(directory) $(ProcId) $(N) $(muon_file) $(n_events) $(SUB) $(GEOFILE)
+environment = "EOS_DATA=$ENV(EOS_PUBLIC) SHIP_CVMFS_SETUP_FILE=$ENV(SHIP_CVMFS_SETUP_FILE) FAIRSHIP_DIR=$ENV(FAIRSHIP) MAGNET_GEO=$ENV(MAGNET_GEO)"
 output = /afs/cern.ch/user/e/edursov/private/SIMULATIONS/my_FairShip/muon/output.out
 error = /afs/cern.ch/user/e/edursov/private/SIMULATIONS/my_FairShip/muon/error.err
 log = /afs/cern.ch/user/e/edursov/private/SIMULATIONS/my_FairShip/muon/logs.log
