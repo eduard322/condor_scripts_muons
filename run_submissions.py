@@ -13,7 +13,7 @@ EOS = os.environ['EOS_PUBLIC']
 N_JOBS=20
 
 
-with open("input_for_muon_prod.txt", "r") as f:
+with open("geofiles/input_for_muon_prod.txt", "r") as f:
     for line in f:
         filepath, n_events, foldername = line.strip().split(", ")
         directory = os.path.join(EOS, DATA_DIR, foldername)
